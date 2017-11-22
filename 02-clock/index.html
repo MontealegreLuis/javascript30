@@ -48,6 +48,12 @@
             background: black;
             position: absolute;
             top: 50%;
+            /* Move the starting point of the transformation to the right side*/
+            transform-origin: 100%;
+            transform: rotate(90deg); /* Make the hands start at 12 o'clock */
+            /* Transition timing configuration for the ticking effect */
+            transition: all 0.05s;
+            transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
         }
 
     </style>
